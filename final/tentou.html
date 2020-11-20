@@ -1,0 +1,31 @@
+<html>
+    <body bgcolor=#AAAAAA>
+    <center>
+        <h1>Tentoumushi v0.9</h1>
+
+        <table border=3 cellspacing=0 cellpadding=0>
+            <tr><td>
+            <APPLET CODE = "TentouApplet.class" ARCHIVE = "tentou.zip,golden_0_2_3.jar" WIDTH = "400" HEIGHT = "300" MAYSCRIPT>
+
+            </APPLET>
+
+
+</td></tr></table>
+        </center>
+
+        <script language=javascript>
+            function doAlert(s) {
+                alert(s);
+            }
+
+            function SetCookie(cookieName,cookieValue,nDays) {
+                var today = new Date();
+                var expire = new Date();
+                if (nDays==null || nDays==0) nDays=1;
+                expire.setTime(today.getTime() + 3600000*24*nDays);
+                document.cookie = cookieName+"="+escape(cookieValue)
+                    + ";expires="+expire.toGMTString();
+             }
+         </script>
+
+</html>
